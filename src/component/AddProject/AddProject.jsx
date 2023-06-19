@@ -25,7 +25,7 @@ const AddProject = () => {
     console.log(formData);
     resetForm();
     const response = await axios.post(
-      `https://planning-tool-for-an-office.onrender.com/project/create`,
+      `https://capacity-planing.onrender.com/project/create`,
       {
         projectName: formData.projectName,
         price: formData.price,

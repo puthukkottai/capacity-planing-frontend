@@ -22,7 +22,7 @@ const Home = () => {
   useEffect(() => {
     const getdata = async () => {
       const response = await axios.get(
-        `https://planning-tool-for-an-office.onrender.com/project/get`
+        `https://capacity-planing.onrender.com/project/get`
       );
       //console.log(response.data);
       setBookData(response.data);
@@ -32,7 +32,7 @@ const Home = () => {
   const handleDelete = async (e, id) => {
     console.log(id);
     const response = await axios.delete(
-      `https://planning-tool-for-an-office.onrender.com/project/delete/${id}`
+      `https://capacity-planing.onrender.com/delete/${id}`
     );
     const data = bookData.filter((row) => row.id !== response.data.id);
     setBookData(data);

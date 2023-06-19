@@ -15,7 +15,7 @@ const LogIn = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await axios.post(
-      "https://planning-tool-for-an-office.onrender.com/register/login",
+      "https://capacity-planing.onrender.com/register/login",
       {
         ...formData,
       }

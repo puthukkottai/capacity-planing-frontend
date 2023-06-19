@@ -7,7 +7,7 @@ const ProjectList = () => {
   const [project, setProject] = useState([]);
   const getProject = async () => {
     const response = await axios.get(
-      "https://planning-tool-for-an-office.onrender.com/project/get"
+      "https://capacity-planing.onrender.com/project/get"
     );
     //console.log(response.data);
     setProject(response.data);

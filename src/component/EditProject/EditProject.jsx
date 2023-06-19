@@ -24,7 +24,7 @@ const EditProject = () => {
     async function Apidata() {
       console.log(params.id);
       const response = await axios.get(
-        `https://planning-tool-for-an-office.onrender.com/project/get/${params.id}`
+        `https://capacity-planing.onrender.com/project/get/${params.id}`
       );
       // setGet(response.data);
       console.log(response.data[0]);
@@ -47,7 +47,7 @@ const EditProject = () => {
     //console.log(params.id);
 
     const response = await axios.put(
-      `https://planning-tool-for-an-office.onrender.com/project/update/${params.id}`,
+      `https://capacity-planing.onrender.com/project/update/${params.id}`,
       {
         projectName: formData.projectName,
         price: formData.price,

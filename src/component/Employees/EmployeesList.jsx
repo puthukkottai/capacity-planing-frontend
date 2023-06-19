@@ -7,7 +7,7 @@ const EmployeesList = () => {
   const [employeesList, setEmployeesList] = useState([]);
   const getEmployee = async () => {
     const response = await axios.get(
-      "https://planning-tool-for-an-office.onrender.com/empolyee/get"
+      "https://capacity-planing.onrender.com/empolyee/get"
     );
     setEmployeesList(response.data);
     console.log(response.data);

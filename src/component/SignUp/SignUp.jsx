@@ -18,7 +18,7 @@ const SignUp = () => {
     e.preventDefault();
     console.log(formData);
     const response = await axios.post(
-      "https://planning-tool-for-an-office.onrender.com/register/signup",
+      "https://capacity-planing.onrender.com/register/signup",
       {
         ...formData,
       }
